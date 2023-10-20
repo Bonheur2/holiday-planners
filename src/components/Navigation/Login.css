@@ -1,0 +1,99 @@
+
+.contact-form {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 30px;
+    margin: 50px;
+    text-align: start;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .contact-form h1,
+  p {
+    margin-bottom: 10px;
+  }
+  .login-dash {
+    flex-basis: 100%;
+  }
+  .contact-form form input[type="submit"] {
+    width: 75%;
+    padding: 10px;
+    background: none;
+    color: #000000;
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #c29d59;
+    margin-top: 10px;
+    color: white;
+  }
+  .user-logo {
+    margin-right: 0;
+    flex-basis: 100%;
+  }
+  .contact-form form input[type="email"] {
+    width: 75%;
+    padding: 10px;
+    background: none;
+    color: #000000;
+    border: 2px solid rgb(61, 59, 59);
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  #passwords {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+  }
+  .login-us {
+    display: flex;
+    margin-left: 3rem;
+    width: 63%;
+    justify-content: space-between;
+  }
+  #social {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(100, 96, 96);
+  }
+  .contact-form form input[type="password"] {
+    width: 75%;
+    padding: 10px;
+    background: none;
+    color: #000000;
+    border: 2px solid rgb(61, 59, 59);
+    outline: none;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .contact-form label {
+    margin: 2px;
+    font-weight: bold;
+  }
+  .contact-form .submit {
+    font-size: 20px;
+    background-color: #c29d59;
+    color: #ffffff;
+    width: 160px;
+    transition: all 0.45s ease;
+    border: none;
+  }
+  .contact-form .submit:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+    background-color: #000000;
+  }
+  
+  .input-el input:focus {
+    outline: 0;
+  }
+  .error {
+    color: #cf0a0a;
+    margin-bottom: 1rem;
+  }
