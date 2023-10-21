@@ -4,12 +4,16 @@ import Modal from "react-modal";
 import {GiCancel}from  "react-icons/gi"
 
 import EditUserForm from "./EditUserForm";
-import { useEffect } from "react";
-import axios from "axios";
+import { useEffect, useContext } from "react";
+import { AuthContext } from "../../../context/AppProvider";
+
 
 Modal.setAppElement("#root");
 
 function Users() {
+  const { myusers } = useContext(AuthContext);
+  console.log(myusers);
+
   const initialUserData = [
     {
       id: 1,
@@ -30,7 +34,7 @@ function Users() {
   const [userData, setUserData] = useState(initialUserData);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [selectedUser, setSelectedUser] = useState();
-  const[myusers,setMyusers]=useState([])
+  
 
   const handleEdit = (user) => {
     setSelectedUser(user);
@@ -48,15 +52,7 @@ function Users() {
   function NewUsers() {
     setaddUser(true);
   }
-  useEffect(()=>{
-    const fetchuser = async ()=>{
-     const res =  await axios.get('https://holiday-planner-4lnj.onrender.com/api/v1/auth/users')
-     console.log(res.data)
-     setMyusers(res.data)
-    }
-    fetchuser()
-  }
-  ,[])
+ 
   return (
     <>
       {addUser &&

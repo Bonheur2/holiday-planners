@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState, useContext} from "react";
 import { useParams } from "react-router-dom";
 import "./SingleTour.css";
+import { AuthContext } from "../../context/AppProvider";
 
-import { tourlists } from "./Tourlist";
 
 const SingleTour = () => {
+
+  const { myTours } = useContext(AuthContext);
  
   const { id } = useParams();
-  const tour = tourlists.find((invo) => invo.id == id  )
+  const tour = myTours.find((invo) => invo._id == id  )
   console.log(tour)
 
   const { country } = tour;

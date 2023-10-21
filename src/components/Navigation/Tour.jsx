@@ -4,25 +4,13 @@ import { tourlists } from "./Tourlist";
 import { Link, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { AuthContext } from "../../context/AppProvider";
+import { useContext } from "react";
 
 
 function Tour() {
 
-
-        const [myTours, setMyTours] = useState([])
-        useEffect(()=>{
-          const fetchuser = async()=>{
-           try {
-             const result =  await axios.get('https://holiday-planner-4lnj.onrender.com/api/v1/tour')
-             console.log(result.data)
-              setMyTours(result.data)
-           } catch (error) {
-            console.log(error);
-           }
-          } 
-          fetchuser()
-        }
-        ,[])
+  const { myTours } = useContext(AuthContext);
 
   return (
     <div>
@@ -51,7 +39,7 @@ function Tour() {
                 </div>
                 <div className="durationn">
                   <p>${invo.Price}</p>
-                  <Link  to={`/tour/${invo.id}`}>
+                  <Link  to={`/tour/${invo._id}`}>
                   <button className="find-buttonn">BOOK NOW</button>
                   </Link>
                 </div>

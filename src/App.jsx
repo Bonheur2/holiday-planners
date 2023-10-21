@@ -14,20 +14,16 @@ import Dashboard from "./components/Navigation/Dashboard";
 import SingleTour from "./components/Navigation/SingleTour";
 import Users from "./components/Navigation/dashboard/Users";
 import Tourdash from "./components/Navigation/dashboard/Tourdash";
-import TourDetail from "./components/Navigation/dashboard/TourDetail";
 import Booking from "./components/Navigation/Booking";
 import Setting from "./components/Navigation/Setting";
 import BarChart from "./components/Navigation/dashboard/MYchart";
-// import MyContext from "./components/MyContext";
 
 const Layout = () => {
   return (
     <div>
-      {/* <MyContext.Provider> */}
         <Navbar />
         <Outlet />
         <Footer />
-      {/* </MyContext.Provider> */}
     </div>
   );
 };
