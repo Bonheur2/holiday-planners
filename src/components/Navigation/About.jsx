@@ -10,11 +10,11 @@ function About() {
     <div className="about-imageback">
       </div>
       <div className="data-filters">
-        <div>
+        <div className="about-select">
           <ImLocation className="about-icon" />
           <input type="text" placeholder="WHERE TO?" className="filter-input" />
         </div>
-        <div>
+        <div className="about-select">
           <FaCalendarAlt className="about-icon" />
           <select className="filter-select">
             <option value="">WHEN?</option>
@@ -32,7 +32,7 @@ function About() {
             <option value="December">December</option>
           </select>
         </div>
-        <div>
+        <div className="about-select">
           <FaFlag className="about-icon" />
           <select className="filter-select">
             <option value="">CULTURE</option>
@@ -65,7 +65,7 @@ function About() {
           </p>
           <button className="read-more">Read More</button>
         </div>
-      </div>
+        </div>
     </>
   );
 }

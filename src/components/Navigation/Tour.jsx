@@ -7,7 +7,6 @@ import axios from "axios";
 
 
 function Tour() {
-        // const {id}= useParams()
 
 
         const [myTours, setMyTours] = useState([])

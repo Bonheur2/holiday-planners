@@ -18,24 +18,26 @@ import TourDetail from "./components/Navigation/dashboard/TourDetail";
 import Booking from "./components/Navigation/Booking";
 import Setting from "./components/Navigation/Setting";
 import BarChart from "./components/Navigation/dashboard/MYchart";
+// import MyContext from "./components/MyContext";
 
 const Layout = () => {
   return (
     <div>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      {/* <MyContext.Provider> */}
+        <Navbar />
+        <Outlet />
+        <Footer />
+      {/* </MyContext.Provider> */}
     </div>
   );
 };
-const Dash = () =>
-{
-  return(
+const Dash = () => {
+  return (
     <div>
-      <Dashboard/>
-     </div>
-  )
-}
+      <Dashboard />
+    </div>
+  );
+};
 function App() {
   return (
     <BrowserRouter>
@@ -45,22 +47,19 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/destination" element={<Destination />} />
           <Route path="/tour" element={<Tour />} />
-            <Route path="/tour/:id" element={<SingleTour/>}></Route>
+          <Route path="/tour/:id" element={<SingleTour />}></Route>
           <Route path="/contact" element={<Contact />} />
         </Route>
         <Route path="/login" element={<Login />}></Route>
 
-
-
-
-        <Route path="/signup" element={<Register />} ></Route>
-        <Route path="/tour" element={<Tour/>}></Route>
-        <Route path="/dashboard"  element={<Dash />}>
-          <Route path="barchart" element={<BarChart/>}/>
-        <Route path="users" element={<Users/>}/>
-        <Route path="dashtour" element={<Tourdash />}/>
-        <Route path="booking" element={<Booking/>}/>
-        <Route path="setting" element={<Setting/>}/>
+        <Route path="/signup" element={<Register />}></Route>
+        <Route path="/tour" element={<Tour />}></Route>
+        <Route path="/dashboard" element={<Dash />}>
+          <Route path="barchart" element={<BarChart />} />
+          <Route path="users" element={<Users />} />
+          <Route path="dashtour" element={<Tourdash />} />
+          <Route path="booking" element={<Booking />} />
+          <Route path="setting" element={<Setting />} />
         </Route>
       </Routes>
     </BrowserRouter>

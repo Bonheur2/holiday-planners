@@ -234,7 +234,7 @@
   flex-direction: column;
   width: 30%;
 }
-.help h1{
+.help h1 {
   width: 80%;
   margin-bottom: 20px;
 }
@@ -311,7 +311,7 @@ hr {
   position: absolute;
   z-index: 2;
   font-style: italic;
-  margin: -40rem 35rem  46px;
+  margin: -40rem 35rem 46px;
   font-size: 100px;
 }
 .imageee {
@@ -341,7 +341,9 @@ hr {
 }
 .all-title {
   color: #c29d59;
-  left: 0;
+  border-left: 5px solid #c29d59 ;
+  padding: 5px;
+  font-size: 25px;
 }
 
 .read-more {
@@ -382,10 +384,9 @@ h1 {
   font-weight: bold;
   color: white;
 }
-.my-home  span{
+.my-home span {
   color: #c29d59;
 }
-
 
 /*style of form in css*/
 
@@ -465,8 +466,7 @@ h1 {
   background-color: #c29d59;
   transition: transform 0.3s;
 }
-.mydesti
-{
+.mydesti {
   color: black;
   margin-bottom: 10px;
 }
@@ -505,7 +505,6 @@ h1 {
 .contact-form-content {
   display: flex;
   margin: 10px;
-
 }
 .contact-input {
   gap: 10px;
@@ -530,7 +529,7 @@ textarea {
   gap: 20px;
 }
 .contact-button {
-margin: 10px 10px 50px 10px;
+  margin: 10px 10px 50px 10px;
   width: 15%;
   font-size: 20px;
   border: none;
@@ -555,7 +554,7 @@ margin: 10px 10px 50px 10px;
   margin-left: 5vh;
   background-color: #b59357;
 }
-.contact-question h1{
+.contact-question h1 {
   width: 100%;
   font-weight: bold;
   font-size: 2.1rem;
@@ -570,8 +569,8 @@ margin: 10px 10px 50px 10px;
   width: 80%;
   margin-left: 30px;
 }
-.contact-book-list h1{
-   width: 100%;
+.contact-book-list h1 {
+  width: 100%;
   font-weight: bold;
   font-size: 2.1rem;
   text-align: center;
@@ -596,11 +595,11 @@ margin: 10px 10px 50px 10px;
 .contact-location3 {
   align-items: center;
 }
-.contact-location h1{
-width: 100%;
-text-align: center;
-border-bottom: 2px solid #c29d59;
-margin-bottom: 10px;
+.contact-location h1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #c29d59;
+  margin-bottom: 10px;
 }
 .icon3 {
   color: #c29d59;
@@ -648,100 +647,123 @@ margin-bottom: 10px;
 .tour-left-side {
   float: left;
 }
-.chart-container
-{
+.chart-container {
   display: flex;
   background-color: burlywood;
 }
-
-
-
 
 /* Responsiveness on navbar */
 
 @media (max-width: 768px) {
   .navbar-container1 {
-    height: auto; 
+    height: auto;
     flex-direction: column;
   }
 
-  .navbar-contents, .navbar-icons {
+  .navbar-contents,
+  .navbar-icons {
     flex-direction: column;
   }
 
-  .navbar-email, .navbar-phone {
+  .navbar-email,
+  .navbar-phone {
     text-align: center;
   }
 
   .icons1 {
     font-size: 20px;
-    
   }
-  .navbar-icons
-  {
+  .navbar-icons {
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
   }
   /* navbanners responsiveness */
 
-.navbar-container2 {
-  flex-direction: column;
-  height: auto;
-}
+  .navbar-container2 {
+    flex-direction: column;
+    height: auto;
+  }
 
-.reserve-btn {
-  height: auto;
-  font-size: 18px;
-  padding: 5px 15px;
-}
+  .reserve-btn {
+    height: auto;
+    font-size: 18px;
+    padding: 5px 15px;
+  }
 
-.search-btn {
-  font-size: 18px;
-}
+  .search-btn {
+    font-size: 18px;
+  }
 
-.iconsbar {
-  font-size: 25px;
-}
+  .iconsbar {
+    font-size: 25px;
+  }
 
-/* about  */
+  /* about  */
 
-.about-container {
-  flex-direction: column;
-  text-align: center;
-  margin-bottom: 10px;
-}
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-.about-image {
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-}
+  .about-image {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
 
-.about-imageback h1 {
-  margin: 20px 0;
-  font-size: 36px;
-}
+  .about-imageback h1 {
+    margin: 20px 0;
+    font-size: 36px;
+  }
 
-.image1 {
-  width: 100%;
-}
+  .image1 {
+    width: 80%;
+  }
 
-.image2 {
-  position: static;
-  margin: 0;
-  width: 100%;
-  height: auto;
-}
-.read-more
-{
-  height: auto;
-  padding: 8px 15px;
-}
-.filter-select option
-{
-  width: auto;
-}
+  .image2 {
+    position: static;
+    margin: 0;
+    width: 80%;
+    height: auto;
+  }
+  .read-more {
+    height: auto;
+    padding: 8px 15px;
+  }
+  .data-filters {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: fit-content;
+    gap: 0;
+    margin-bottom: 10px;
+  }
+  .data-filters input
+  {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 
+  }
+  .data-filters select
+  {
+    margin-bottom: 10px;
 
+    width: 100%;
+  }
+  .about-select
+  {
+    width: 90%;
+  }
+  .find-button{
+    margin: 0;
+    width: 90%;
+  }
+  .filter-select .filter-select option {
+    width: auto;
+  }
 }
