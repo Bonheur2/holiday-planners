@@ -4,16 +4,24 @@ import Modal from "react-modal";
 import {GiCancel}from  "react-icons/gi"
 
 import EditUserForm from "./EditUserForm";
+<<<<<<< HEAD
 import { useEffect, useContext } from "react";
 import { AuthContext } from "../../../context/AppProvider";
 
+=======
+import { useEffect } from "react";
+import axios from "axios";
+>>>>>>> e194052 (initial commit)
 
 Modal.setAppElement("#root");
 
 function Users() {
+<<<<<<< HEAD
   const { myusers } = useContext(AuthContext);
   console.log(myusers);
 
+=======
+>>>>>>> e194052 (initial commit)
   const initialUserData = [
     {
       id: 1,
@@ -34,7 +42,11 @@ function Users() {
   const [userData, setUserData] = useState(initialUserData);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [selectedUser, setSelectedUser] = useState();
+<<<<<<< HEAD
   
+=======
+  const[myusers,setMyusers]=useState([])
+>>>>>>> e194052 (initial commit)
 
   const handleEdit = (user) => {
     setSelectedUser(user);
@@ -52,7 +64,19 @@ function Users() {
   function NewUsers() {
     setaddUser(true);
   }
+<<<<<<< HEAD
  
+=======
+  useEffect(()=>{
+    const fetchuser = async ()=>{
+     const res =  await axios.get('https://holiday-planner-4lnj.onrender.com/api/v1/auth/users')
+     console.log(res.data)
+     setMyusers(res.data)
+    }
+    fetchuser()
+  }
+  ,[])
+>>>>>>> e194052 (initial commit)
   return (
     <>
       {addUser &&

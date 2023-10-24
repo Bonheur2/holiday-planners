@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useContext} from "react";
 import { useParams } from "react-router-dom";
 import "./SingleTour.css";
@@ -10,6 +11,18 @@ const SingleTour = () => {
  
   const { id } = useParams();
   const tour = myTours.find((invo) => invo._id == id  )
+=======
+import React from "react";
+import { useParams } from "react-router-dom";
+import "./SingleTour.css";
+
+import { tourlists } from "./Tourlist";
+
+const SingleTour = () => {
+ 
+  const { id } = useParams();
+  const tour = tourlists.find((invo) => invo.id == id  )
+>>>>>>> e194052 (initial commit)
   console.log(tour)
 
   const { country } = tour;

@@ -234,7 +234,11 @@
   flex-direction: column;
   width: 30%;
 }
+<<<<<<< HEAD
 .help h1 {
+=======
+.help h1{
+>>>>>>> e194052 (initial commit)
   width: 80%;
   margin-bottom: 20px;
 }
@@ -311,7 +315,11 @@ hr {
   position: absolute;
   z-index: 2;
   font-style: italic;
+<<<<<<< HEAD
   margin: -40rem 35rem 46px;
+=======
+  margin: -40rem 35rem  46px;
+>>>>>>> e194052 (initial commit)
   font-size: 100px;
 }
 .imageee {
@@ -341,9 +349,13 @@ hr {
 }
 .all-title {
   color: #c29d59;
+<<<<<<< HEAD
   border-left: 5px solid #c29d59 ;
   padding: 5px;
   font-size: 25px;
+=======
+  left: 0;
+>>>>>>> e194052 (initial commit)
 }
 
 .read-more {
@@ -384,10 +396,18 @@ h1 {
   font-weight: bold;
   color: white;
 }
+<<<<<<< HEAD
 .my-home span {
   color: #c29d59;
 }
 
+=======
+.my-home  span{
+  color: #c29d59;
+}
+
+
+>>>>>>> e194052 (initial commit)
 /*style of form in css*/
 
 .data-filters {
@@ -466,7 +486,12 @@ h1 {
   background-color: #c29d59;
   transition: transform 0.3s;
 }
+<<<<<<< HEAD
 .mydesti {
+=======
+.mydesti
+{
+>>>>>>> e194052 (initial commit)
   color: black;
   margin-bottom: 10px;
 }
@@ -505,6 +530,10 @@ h1 {
 .contact-form-content {
   display: flex;
   margin: 10px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> e194052 (initial commit)
 }
 .contact-input {
   gap: 10px;
@@ -529,7 +558,11 @@ textarea {
   gap: 20px;
 }
 .contact-button {
+<<<<<<< HEAD
   margin: 10px 10px 50px 10px;
+=======
+margin: 10px 10px 50px 10px;
+>>>>>>> e194052 (initial commit)
   width: 15%;
   font-size: 20px;
   border: none;
@@ -554,7 +587,11 @@ textarea {
   margin-left: 5vh;
   background-color: #b59357;
 }
+<<<<<<< HEAD
 .contact-question h1 {
+=======
+.contact-question h1{
+>>>>>>> e194052 (initial commit)
   width: 100%;
   font-weight: bold;
   font-size: 2.1rem;
@@ -569,8 +606,13 @@ textarea {
   width: 80%;
   margin-left: 30px;
 }
+<<<<<<< HEAD
 .contact-book-list h1 {
   width: 100%;
+=======
+.contact-book-list h1{
+   width: 100%;
+>>>>>>> e194052 (initial commit)
   font-weight: bold;
   font-size: 2.1rem;
   text-align: center;
@@ -595,11 +637,19 @@ textarea {
 .contact-location3 {
   align-items: center;
 }
+<<<<<<< HEAD
 .contact-location h1 {
   width: 100%;
   text-align: center;
   border-bottom: 2px solid #c29d59;
   margin-bottom: 10px;
+=======
+.contact-location h1{
+width: 100%;
+text-align: center;
+border-bottom: 2px solid #c29d59;
+margin-bottom: 10px;
+>>>>>>> e194052 (initial commit)
 }
 .icon3 {
   color: #c29d59;
@@ -647,15 +697,27 @@ textarea {
 .tour-left-side {
   float: left;
 }
+<<<<<<< HEAD
 .chart-container {
+=======
+.chart-container
+{
+>>>>>>> e194052 (initial commit)
   display: flex;
   background-color: burlywood;
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> e194052 (initial commit)
 /* Responsiveness on navbar */
 
 @media (max-width: 768px) {
   .navbar-container1 {
+<<<<<<< HEAD
     height: auto;
     flex-direction: column;
   }
@@ -667,17 +729,36 @@ textarea {
 
   .navbar-email,
   .navbar-phone {
+=======
+    height: auto; 
+    flex-direction: column;
+  }
+
+  .navbar-contents, .navbar-icons {
+    flex-direction: column;
+  }
+
+  .navbar-email, .navbar-phone {
+>>>>>>> e194052 (initial commit)
     text-align: center;
   }
 
   .icons1 {
     font-size: 20px;
+<<<<<<< HEAD
   }
   .navbar-icons {
+=======
+    
+  }
+  .navbar-icons
+  {
+>>>>>>> e194052 (initial commit)
     display: flex;
     flex-direction: row;
     margin-bottom: 30px;
   }
+<<<<<<< HEAD
   /* navbanners responsiveness */
 
   .navbar-container2 {
@@ -766,4 +847,68 @@ textarea {
   .filter-select .filter-select option {
     width: auto;
   }
+=======
+
+  /* navbanners responsiveness */
+
+.navbar-container2 {
+  flex-direction: column;
+  height: auto;
+}
+
+.reserve-btn {
+  height: auto;
+  font-size: 18px;
+  padding: 5px 15px;
+}
+
+.search-btn {
+  font-size: 18px;
+}
+
+.iconsbar {
+  font-size: 25px;
+}
+
+/* about  */
+
+.about-container {
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.about-image {
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.about-imageback h1 {
+  margin: 20px 0;
+  font-size: 36px;
+}
+
+.image1 {
+  width: 100%;
+}
+
+.image2 {
+  position: static;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.read-more
+{
+  height: auto;
+  padding: 8px 15px;
+}
+.filter-select option
+{
+  width: auto;
+}
+
+
+>>>>>>> e194052 (initial commit)
 }

@@ -10,11 +10,19 @@ function About() {
     <div className="about-imageback">
       </div>
       <div className="data-filters">
+<<<<<<< HEAD
         <div className="about-select">
           <ImLocation className="about-icon" />
           <input type="text" placeholder="WHERE TO?" className="filter-input" />
         </div>
         <div className="about-select">
+=======
+        <div>
+          <ImLocation className="about-icon" />
+          <input type="text" placeholder="WHERE TO?" className="filter-input" />
+        </div>
+        <div>
+>>>>>>> e194052 (initial commit)
           <FaCalendarAlt className="about-icon" />
           <select className="filter-select">
             <option value="">WHEN?</option>
@@ -32,7 +40,11 @@ function About() {
             <option value="December">December</option>
           </select>
         </div>
+<<<<<<< HEAD
         <div className="about-select">
+=======
+        <div>
+>>>>>>> e194052 (initial commit)
           <FaFlag className="about-icon" />
           <select className="filter-select">
             <option value="">CULTURE</option>
@@ -65,7 +77,11 @@ function About() {
           </p>
           <button className="read-more">Read More</button>
         </div>
+<<<<<<< HEAD
         </div>
+=======
+      </div>
+>>>>>>> e194052 (initial commit)
     </>
   );
 }

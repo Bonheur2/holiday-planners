@@ -115,7 +115,11 @@
 .add-user-btn{
   display: flex;
   float:right;
+<<<<<<< HEAD
   background-color: #C29D59;
+=======
+  background-color: black;
+>>>>>>> e194052 (initial commit)
   justify-content: flex-end;
   padding: 5px 15px;
   border-radius: 10px;
